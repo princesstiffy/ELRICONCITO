@@ -1,0 +1,295 @@
+/* 
+
+
+STYLE:
+
+#be3a31 : red
+#0e3f3d : green
+#f1d160 : yellow
+#efe8cc : cream
+
+
+. = class
+# = id
+
+
+*/
+
+
+/* fonts */
+
+@font-face {
+    font-family: 'bernoru';
+    src: url(FONTS/bernoru-blackultraexpanded.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'postercut';
+    src: url(FONTS/postercut.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'postercut-italics';
+    src: url(FONTS/postercutitalics.otf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'roboto-mono';
+    src: url(FONTS/RobotoMono-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-mono-italics';
+    src: url(FONTS/RobotoMono-Italic-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+/* nav bar */
+    .mainnav {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        justify-content: space-between;
+
+
+        padding: 15px 30px;
+        z-index: 1000;
+        margin-top: 14px;
+
+    }
+
+    .mainnav ul {
+        display: flex;
+        list-style: none;
+        gap: 60px;
+    }
+
+        .mainnav a {
+            text-decoration: none;
+            font-family: 'roboto-mono', monospace;
+            font-size: 25px;
+            transition: color 0.5s ease;
+        }
+
+        .navlogo img {
+            height: 80px;
+            width: 80px;
+            display: block;
+        }
+    
+    /* index nav */
+        #homeheader a {
+            color: #be3a31;
+        }
+
+        #homeheader a:hover {
+            color: #0e3f3d;
+        }
+
+
+
+
+
+/* body and html */
+    body {
+        background-color: #efe8cc;
+
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0;
+
+        width: 100%;
+        max-width: 100vw;
+        height: auto;
+    }
+
+
+/* images and vid */
+    img, video {
+        width: 100%;
+    }
+
+
+
+/* index */
+
+        #homegrid {
+        display: grid;
+        grid-template-columns: 1fr; /* one column layout */
+        gap: 4rem;
+        width: 100%;
+        }
+
+        #welcome,
+        #welcomescroll,
+        #homeorder {
+        position: relative;
+        padding: 4rem 2rem;
+        }
+
+        #welcome h1,
+        #welcomescroll h1, 
+        #homeorder h1 {
+            font-family: 'bernoru';
+        }
+
+            /* welcome section */
+                #welcome h1 {
+                    color: #0e3f3d;
+                    font-size: 110px;
+                    letter-spacing: 0;
+                    text-align: left;
+                }
+
+                .landing-title {
+                    position: relative;
+                    z-index: 1;
+                }
+
+                    .landing-img {
+                        max-width: 900px;
+                        height: auto;
+                        position: absolute;
+                        z-index: 0;
+                    }
+
+                #welcome img {
+                    width: 900px;
+                    height: 530px;
+                    object-fit: cover;
+                    top: 20px;
+                    left: 550px;
+                    opacity: 0.8;
+                }
+
+                #welcome {
+                    margin-top: 160px;
+                    margin-bottom: 200px;
+                }
+
+            /* welcomescroll section */
+                #welcomescroll h1 {
+                    color: #0e3f3d;
+                    font-size: 110px;
+                    letter-spacing: 0;
+                    text-align: right;
+                }
+
+                #welcomescroll img {
+                    width: 800px;
+                    height: 500px;
+                    object-fit: cover;
+                    bottom: 10px;
+                    opacity: 0.8;
+                }
+
+                #welcomescroll {
+                    margin-bottom: 200px;
+
+                }
+        
+            /* foodpreview section */
+
+
+                /* change color only when in food preview section */
+                body.food-preview-active .mainnav a {
+                    color: #efe8cc; 
+                }
+
+                body.food-preview-active .mainnav a:hover {
+                    color: #f1d160; 
+                }
+
+                #foodpreview {
+                    position: relative;
+                    padding: 5rem 2rem;
+                    background-color: #be3a31;
+                    min-height: 140vh;
+                    padding-top: 20px;
+                }
+
+                #foodpreview img {
+                    position: relative;
+                }
+
+
+                    #food1 img {
+                        width: 300px;
+                        height: 300px;
+                        object-fit: cover;
+
+                        position: absolute;
+                        top: 200px; left: 250px;
+                    }
+
+                    #food2 img {
+                        width: 600px;
+                        height: 400px;
+                        object-fit: cover;
+
+                        position: absolute;
+                        top: 80px; left: 800px; 
+                    }
+
+                    #food3 img {
+                        width: 300px;
+                        height: 300px;
+                        object-fit: cover;
+
+                        position: absolute;
+                        top: 530px; left: 570px;
+                    }
+
+                    #food4 img {
+                        width: 400px;
+                        height: 400px;
+                        object-fit: cover;
+
+                        position: absolute;
+                        top: 760px; left: 900px;
+                    }
+
+                    #food5 img {
+                        width: 250px;
+                        height: 250px;
+                        object-fit: cover;
+
+                        position: absolute;
+                        top: 570px; left: 1340px;
+                    }
+
+                    #food6 img {
+                        width: 400px;
+                        height: 300px;
+                        object-fit: cover;
+
+                        position: absolute;
+                        top: 720px; left: 100px;
+                    }
+
+
+                .label {
+                position: absolute;
+                font-family: 'roboto-mono';
+                }
+
+                /* label placements */
+                .label1 { top: 70px; left: 40px; }
+                .label2 { top: 140px; left: 320px; }
+                .label3 { top: 320px; left: 100px; }
+                .labe14 { top: 400px; left: 370px; }
