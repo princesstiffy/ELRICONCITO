@@ -11,19 +11,27 @@
 
 
 <body>
-    <header id="aboutheader">
-        <nav class="mainnav">
-                <ul>
-                    <li><a href="MENU.html">MENU</a></li>
-                    <li><a href="INDEX.html">HOME</a></li>
-                    <li><a href="ORDER.html">ORDER</a></li>
-                    <li><a href="CONTACT.html">CONTACT</a></li>
-                </ul>
+        <nav class="nav-wrapper">
 
-                <!-- logo -->
-                <a href="INDEX.html" class="navlogo">
-                    <img src="IMAGES/logo.jpeg" alt="El Riconcito Logo">
-                </a>
+            <!-- logo and hamburg -->
+            <div class="nav-header">
+                    <!-- hamburger -->
+                    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+
+                    <!-- logo -->
+                    <a href="INDEX.html" class="logo">
+                        <img src="IMAGES/logo.jpeg" alt="El Riconcito Logo">
+                    </a>
+            </div>
+
+            <ul class="main_nav" id="myTopnav">
+                <li><a href="INDEX.html">HOME</a></li>
+                <li><a href="MENU.html">MENU</a></li>
+                <li><a href="ORDER.html">ORDER</a></li>
+                <li><a href="CONTACT.html">CONTACT</a></li>
+            </ul>
         </nav>
     </header>
 

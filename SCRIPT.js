@@ -1,7 +1,7 @@
 // HOME PAGE SCROLL NAV COLOR CHANGE
     const foodSection = document.getElementById("foodpreview");
     const nav = document.querySelector("#homeheader nav"); 
-    const navLinks = document.querySelectorAll(".mainnav a");
+    const navLinks = document.querySelectorAll(".main_nav a");
 
     function handleNavColor() {
       const sectionTop = foodSection.getBoundingClientRect().top;
@@ -26,4 +26,29 @@
     window.addEventListener("scroll", handleNavColor);
     window.addEventListener("load", handleNavColor);
     window.addEventListener("resize", handleNavColor); 
+
+
+
+
+
+// HAMBURG NAV BAR
+
+function toggleNav() {
+  const nav = document.getElementById("myTopnav");
+  nav.classList.contains("responsive")
+    ? nav.classList.remove("responsive")
+    : nav.classList.add("responsive");
+}
+
+
+
+// HAMBURG NAV BAR ANIMATIONS
+
+function toggleNav() {
+  const nav = document.getElementById("myTopnav");
+  const icon = document.querySelector(".icon i");
+
+  nav.classList.toggle("responsive");
+  icon.classList.toggle("active"); // add this line
+}
 
