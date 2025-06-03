@@ -131,7 +131,7 @@ STYLE:
             font-size: 28px;
             padding: 20px;
             cursor: pointer;
-            color: #f1d160;
+            color: #0e3f3d;
         }
 
 
@@ -382,6 +382,7 @@ STYLE:
                 body.food-preview-active .main_nav a:hover {
                     color: #f1d160; 
                 }
+
 
                 #foodpreview {
                     position: relative;
@@ -962,9 +963,9 @@ STYLE:
      /* NAV BAR */
 
       .nav-wrapper {
-    flex-direction: column;
-    align-items: stretch;
-  }
+        flex-direction: column;
+        align-items: stretch;
+    }
 
   .nav-header {
     display: flex;
@@ -1042,6 +1043,7 @@ STYLE:
         padding: 10px;
         margin-right: 15px;
         margin-bottom: 15px;
+
       }
 
       .logo {
@@ -1049,11 +1051,12 @@ STYLE:
       }
 
       .icon {
-        color: #f1d160;
+        color: #0e3f3d;
       }
 
       .icon i {
         transition: all 0.3s ease;
+        color: #0e3f3d;
         }
 
         .icon:hover i {
