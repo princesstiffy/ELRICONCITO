@@ -1132,15 +1132,16 @@ STYLE:
         #homegrid {
         width: 100%;
         max-width: 400px;
+        overflow: hidden;
         }
 
             /* welcome section */
                 #welcome h1 {
                     color: #0e3f3d;
-                    font-size: 30px;
-                    max-width: 10ch;
-                    letter-spacing: 0;
+                    font-size: 32px;
                     text-align: left;
+
+                    padding-right: 20px;
                 }
 
                 #welcome img {
@@ -1154,7 +1155,7 @@ STYLE:
 
                 #welcome {
                     margin-top: 160px;
-                    margin-bottom: 600px;
+                    margin-bottom: 200px;
                 }
 
             /* welcomescroll section */
@@ -1269,27 +1270,29 @@ STYLE:
                         object-fit: cover;
 
                         position: absolute;
-                        top: 1340px; left: 120px;
+                        top: 1280px; left: 180px;
+
+                        rotate: 10deg;
                     }
 
 
                     #food8 img {
-                        width: 350px;
-                        height: 350px;
+                        width: 250px;
+                        height: 250px;
                         object-fit: cover;
 
                         position: absolute;
-                        top: 1140px; left: 100px;
+                        top: 1640px; left: 20px;
                     }
 
 
                     #food9 img {
-                        width: 500px;
-                        height: 300px;
+                        width: 250px;
+                        height: 250px;
                         object-fit: cover;
 
                         position: absolute;
-                        top: 1100px; left: 850px;
+                        top: 1900px; left: 100px;
 
                         border: #35c05f solid 10px;
                         border-radius: 10%;
@@ -1308,7 +1311,7 @@ STYLE:
                 /* yellow rectangle */
                 .label1 {
                     background-color: #f1d160;
-                    top: 600px; left: 1200px;
+                    top: 730px; left: 10px;
                     
                     padding: 20px;
                     padding-left: 30px;
@@ -1324,7 +1327,7 @@ STYLE:
                     color: #fff;
                     padding: 40px;
                     border-radius: 50%;
-                    top: 180px; left: 100px;
+                    top: 80px; left: 180px;
                     transform: rotate(-10deg);
  
                 
@@ -1338,7 +1341,7 @@ STYLE:
                     border-radius: 50%;
                     text-align: center;
                     transform: rotate(-10deg);
-                    top: 1200px; left: 1350px; 
+                    top: 1890px; left: 10px; 
                 }
 
                 /* yellow text */
@@ -1349,16 +1352,16 @@ STYLE:
 
                     transform: rotate(270deg);
 
-                    top: 740px; left: -80px; 
+                    top: 1080px; left: 120px; 
                 }
 
                 /* blue text */
                 .labe15 { 
                     font-weight: bold;
-                    font-size: 50px;
+                    font-size: 40px;
                     color: #3538c0;
 
-                    top: 400px; left: 1330px; 
+                    top: 320px; left: 10px; 
                 }
 
                 /* green rounded rectangle */
@@ -1372,7 +1375,7 @@ STYLE:
                     background-color: #35c05f;
 
                     transform: rotate(8deg);
-                    top: 440px; left: 590px; 
+                    top: 440px; left: 190px; 
                 }
 
                 /* cream text */
@@ -1381,14 +1384,14 @@ STYLE:
                     font-size: 50px;
                     color: #efe8cc;
 
-                    top: 970px; left: 770px; 
+                    top: 1450px; left: 50px; 
                 }
 
                 /* dark green rectangle */
                 .label8 {
                     background-color: #0e3f3d;
                     color: #fff;
-                    top: 1200px; left: 330px;
+                    top: 1780px; left: 190px;
                     
                     padding: 20px;
                     padding-left: 30px;
@@ -1403,11 +1406,12 @@ STYLE:
                 #homeorder {
                     margin-top: 60px;
                     margin-bottom: 180px;
+                    overflow: hidden;
                 }
                 
                 #homeorder h1 {
                     color: #0e3f3d;
-                    font-size: 110px;
+                    font-size: 54px;
                     letter-spacing: 0;
                     text-align: left;
                     z-index: 1;
@@ -1420,10 +1424,13 @@ STYLE:
 
                     font-family: 'roboto-mono';
                     font-weight: normal;
-                    font-size: 40px;
+                    font-size: 30px;
 
                     padding-top: 0;
-                    padding-left: 30px;
+                    padding-left: 0;
+                    padding-right: 10px;
+
+                    width: 20ch;
                 }
 
                 #homeorder h3 {
@@ -1431,25 +1438,25 @@ STYLE:
 
                     font-family: 'roboto-mono';
                     font-weight: normal;
-                    font-size: 25px;
+                    font-size: 20px;
 
                     padding-left: 30px;
-                    width: 40ch;
-                    word-spacing: 35px;
+                    width: 20ch;
+                    word-spacing: 5px;
                     line-height: 45px;
                     
                 }
 
                 #homeorder .button {
-                    margin-left: 30px;
+                    margin-left: 10px;
                 }
 
                 #homeorder img {
-                    width: 800px;
-                    height: 530px;
+                    width: 300px;
+                    height: 160px;
                     object-fit: cover;
-                    top: 140px;
-                    left: 750px;
+                    top: 200px;
+                    left: 500px;
                     opacity: 0.8;
                     z-index: -10;
                 }
