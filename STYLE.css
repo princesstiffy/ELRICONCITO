@@ -1195,8 +1195,8 @@ STYLE:
                 #foodpreview {
                     position: relative;
                     background-color: #be3a31;
-                    min-height: 170vh;
-                    padding-top: 80px;
+                    min-height: 250vh;
+                    padding-top: 200px;
                     padding-bottom: 80px;
 
                     overflow-x: hidden;
@@ -1251,24 +1251,25 @@ STYLE:
                         top: 620px; left: 150px;
                     }
 
+
                     #food6 img {
                         width: 200px;
                         height: 350px;
                         object-fit: cover;
 
                         position: absolute;
-                        top: 980px; left: 10px;
+                        top: 930px; left: 10px;
 
                         border: #3538c0 solid 10px;
                     }
 
                     #food7 img {
-                        width: 300px;
-                        height: 500px;
+                        width: 200px;
+                        height: 400px;
                         object-fit: cover;
 
                         position: absolute;
-                        top: 840px; left: 500px;
+                        top: 1340px; left: 120px;
                     }
 
 
