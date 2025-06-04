@@ -957,9 +957,6 @@ STYLE:
 /* MEDIA QUERIES */
     @media screen and (max-width: 400px) {
 
-        /* nav bar */
-
-
      /* NAV BAR */
 
       .nav-wrapper {
@@ -967,35 +964,35 @@ STYLE:
         align-items: stretch;
     }
 
-  .nav-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
-  }
+        .nav-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+        }
 
-  .main_nav {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    padding-left: 20px;
-  }
+        .main_nav {
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            padding-left: 20px;
+        }
 
-  .main_nav.responsive {
-    display: flex;
-  }
+        .main_nav.responsive {
+            display: flex;
+        }
 
-  .main_nav li {
-    width: 100%;
-    margin: 0;
-  }
+        .main_nav li {
+            width: 100%;
+            margin: 0;
+        }
 
-  .main_nav a {
-    padding: 15px 0;
-    display: block;
-    width: 100%;
-  }
+        .main_nav a {
+            padding: 15px 0;
+            display: block;
+            width: 100%;
+        }
 
         
 
@@ -1048,6 +1045,10 @@ STYLE:
 
       .logo {
         margin: 0;
+      }
+
+      .logo img {
+        margin-right: 80px;
       }
 
       .icon {
@@ -1136,55 +1137,46 @@ STYLE:
             /* welcome section */
                 #welcome h1 {
                     color: #0e3f3d;
-                    font-size: 80px;
+                    font-size: 30px;
+                    max-width: 10ch;
                     letter-spacing: 0;
                     text-align: left;
                 }
-
-                .landing-title {
-                    position: relative;
-                    z-index: 1;
-                }
-
-                    .landing-img {
-                        max-width: 300px;
-                        height: auto;
-                        position: absolute;
-                        z-index: 0;
-                    }
 
                 #welcome img {
                     width: 300px;
                     height: 230px;
                     object-fit: cover;
-                    top: 20px;
-                    left: 550px;
+                    top: 150px;
+                    left: 60px;
                     opacity: 0.8;
                 }
 
                 #welcome {
                     margin-top: 160px;
-                    margin-bottom: 200px;
+                    margin-bottom: 600px;
                 }
 
             /* welcomescroll section */
                 #welcomescroll h1 {
                     color: #0e3f3d;
-                    font-size: 110px;
+                    font-size: 30px;
+                    max-width: 10ch;
                     letter-spacing: 0;
                     text-align: right;
+                    right: 10px;
                 }
 
                 #welcomescroll img {
-                    width: 800px;
-                    height: 500px;
+                    width: 200px;
+                    height: 400px;
                     object-fit: cover;
-                    bottom: 10px;
+                    top: 50px;
                     opacity: 0.8;
                 }
 
                 #welcomescroll {
-                    margin-bottom: 200px;
+                    margin-bottom: 400px;
 
                 }
         
@@ -1216,52 +1208,56 @@ STYLE:
 
 
                     #food1 img {
-                        width: 500px;
-                        height: 500px;
+                        width: 200px;
+                        height: 200px;
                         object-fit: cover;
 
                         position: absolute;
-                        top: 130px; left: 140px;
+                        top: 50px; left: 20px;
                     }
 
                     #food2 img {
-                        width: 600px;
-                        height: 400px;
+                        width: 300px;
+                        height: 200px;
                         object-fit: cover;
 
                         position: absolute;
-                        top: 80px; left: 800px;
+                        top: 220px; left: 140px;
                         
                         border: #f1d160 solid 10px;
                         border-radius: 50% / 50%;
+
+                        rotate: 10deg;
                     }
 
                     #food3 img {
-                        width: 600px;
-                        height: 400px;
+                        width: 300px;
+                        height: 200px;
                         object-fit: cover;
 
                         position: absolute;
-                        top: 480px; left: 520px;
+                        top: 450px; left: 5px;
+
+                        rotate: -10deg;
                     }
 
 
                     #food5 img {
-                        width: 600px;
-                        height: 600px;
+                        width: 300px;
+                        height: 300px;
                         object-fit: cover;
 
                         position: absolute;
-                        top: 550px; left: 1200px;
+                        top: 620px; left: 150px;
                     }
 
                     #food6 img {
-                        width: 300px;
-                        height: 450px;
+                        width: 200px;
+                        height: 350px;
                         object-fit: cover;
 
                         position: absolute;
-                        top: 680px; left: 100px;
+                        top: 980px; left: 10px;
 
                         border: #3538c0 solid 10px;
                     }
