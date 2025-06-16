@@ -139,7 +139,7 @@ STYLE:
     /* index nav */
         #homeheader a {
             color: #be3a31;
-            transition: color 0.5s ease;
+            transition: color 0.3s ease;
 
         }
 
@@ -171,6 +171,11 @@ STYLE:
         transition: background-color 1s ease;
 
         }
+
+
+
+
+        
 
 
 
@@ -399,11 +404,9 @@ STYLE:
 
                     overflow-x: hidden;
 
-                    transition: all 3s ease;
-
                     opacity: 0;
                     transform: translateY(40px);
-                    transition: opacity 1s ease, transform 1s ease;
+                    transition: opacity 0.5s ease, transform 0.5s ease;
                 }
 
                     body.food-preview-active #foodpreview {
@@ -971,7 +974,7 @@ STYLE:
 
 /* MEDIA QUERIES */
 
-   @media screen and (max-width: 400px) {
+   @media screen and (max-width: 500px) {
 
      /* NAV BAR */
 
@@ -2289,13 +2292,22 @@ STYLE:
 
 
     /* menu */
-               
+    
+    #menuheader .icon i {
+        color: #be3a31;
+    }
+
+    #menuheader .icon i:hover {
+        color: #f1d160;
+    }
+
         #menugrid {
         display: grid;
         grid-template-columns: 1fr; /* one column layout */
         gap: 4rem;
         width: 100%;
-        background-color: #0e3f3d;
+
+        max-width: 400px;
 
         transition: color 0.5s ease;
 
@@ -2312,7 +2324,7 @@ STYLE:
         .menu-title {
             font-family: 'bernoru';
             color: #efe8cc;
-            font-size: 80px;
+            font-size: 25px;
 
             text-align: center;
 
@@ -2326,7 +2338,7 @@ STYLE:
             color: #be3a31;
             font-weight: normal;
 
-            font-size: 50px;
+            font-size: 30px;
             text-align: center;
 
             margin-top: 0;
@@ -2335,7 +2347,7 @@ STYLE:
             /* main section */
                 #maindishes dl, #snacks dl, #drinks dl {
                     color: #efe8cc;
-                    font-size: 30px;
+                    font-size: 20px;
 
                     font-family: 'roboto-mono';
 
@@ -2348,28 +2360,7 @@ STYLE:
                     margin-top: 60px;
                 }
 
-                .menu-item {
-                display: flex;
-                align-items: center;
-                gap: 0.5rem;
-                flex-wrap: nowrap;
-                white-space: nowrap;
-                }
-
-                .menu-item .item-name {
-                flex-shrink: 0;
-                }
-
-                .menu-item .dots {
-                flex-grow: 1;
-                border-bottom: 4px dotted #efe8cc;
-                height: 1em;
-                margin: 0 0.5rem;
-                }
-
-                .menu-item .price {
-                flex-shrink: 0;
-                }
+        
 
 
 

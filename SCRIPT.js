@@ -1,31 +1,23 @@
 // HOME PAGE SCROLL NAV COLOR CHANGE
-    const foodSection = document.getElementById("foodpreview");
-    const nav = document.querySelector("#homeheader nav"); 
-    const navLinks = document.querySelectorAll(".main_nav a");
+const foodSection = document.getElementById("foodpreview");
+const nav = document.querySelector("#homeheader nav");
 
-    function handleNavColor() {
-      const sectionTop = foodSection.getBoundingClientRect().top;
+function handleNavColor() {
+  const sectionTop = foodSection.getBoundingClientRect().top;
 
-      if (sectionTop <= 0 && sectionTop > -foodSection.offsetHeight) {
-        navLinks.forEach(link => {
-          link.style.transition = "color 0.5s ease";
-          link.style.color = "#efe8cc";
-        });
+  if (sectionTop <= window.innerHeight * 0.5 && sectionTop > -foodSection.offsetHeight) {
+    document.body.classList.add("food-preview-active");
+    nav.classList.add("red-header");
+  } else {
+    document.body.classList.remove("food-preview-active");
+    nav.classList.remove("red-header");
+  }
+}
 
-        nav.classList.add("red-header"); 
-      } else {
-        navLinks.forEach(link => {
-          link.style.transition = "color 0.5s ease";
-          link.style.color = "#be3a31";
-        });
+window.addEventListener("scroll", handleNavColor);
+window.addEventListener("load", handleNavColor);
+window.addEventListener("resize", handleNavColor);
 
-        nav.classList.remove("red-header");
-      }
-    }
-
-    window.addEventListener("scroll", handleNavColor);
-    window.addEventListener("load", handleNavColor);
-    window.addEventListener("resize", handleNavColor); 
 
 
 
@@ -60,7 +52,6 @@ window.addEventListener("scroll", () => {
   const foodSection = document.querySelector("#foodpreview-section");
   const rect = foodSection.getBoundingClientRect();
 
-  // Check if it's visible in the viewport
   if (rect.top <= window.innerHeight * 0.5 && rect.bottom >= window.innerHeight * 0.5) {
     document.body.classList.add("food-preview-active");
   } else {

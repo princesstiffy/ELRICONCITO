@@ -5,26 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MENU</title>
     <link rel="stylesheet" href="STYLE.css">
-    <link rel="icon" href="INSERTHERE" type="image/x-icon"> 
+    <link rel="icon" href="IMAGES/logo.jpeg" type="image/x-icon"> 
     <link rel="stylesheet" href="FONTKIT">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
 
 <body>
      <header id="menuheader">
-        <nav class="mainnav">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="ABOUT.html">ABOUT</a></li>
-                    <li><a href="ORDER.html">ORDER</a></li>
-                    <li><a href="CONTACT.html">CONTACT</a></li>
-                </ul>
+        <nav class="nav-wrapper">
 
-                <!-- logo -->
-                <a href="INDEX.html" class="navlogo">
-                    <img src="IMAGES/logo.jpeg" alt="El Riconsito Logo">
-                </a>
+            <!-- logo and hamburg -->
+            <div class="nav-header">
+                    <!-- hamburger -->
+                    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+
+                    <!-- logo -->
+                    <a href="INDEX.html" class="logo">
+                        <img src="IMAGES/logo.jpeg" alt="El Riconcito Logo">
+                    </a>
+            </div>
+
+            <ul class="main_nav" id="myTopnav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="ABOUT.html">ABOUT</a></li>
+                <li><a href="ORDER.html">ORDER</a></li>
+                <li><a href="CONTACT.html">CONTACT</a></li>
+            </ul>
         </nav>
     </header>
 
