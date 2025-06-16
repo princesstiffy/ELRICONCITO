@@ -1550,37 +1550,44 @@ STYLE:
     /* about */
         #aboutgrid {
                 display: grid;
-                grid-template-columns: 1fr; /* one column layout */
+                grid-template-columns: 1fr; 
                 gap: 4rem;
                 width: 100%;
+                max-width: 400px;
                 background-color: #be3a31;
+                overflow: hidden;
         }
 
                 /* about1 */
                     #about1 h1 {
                         font-family: 'bernoru';
                         color: #0e3f3d;
-                        font-size: 80px;
+                        font-size: 50px;
                         text-align: right;
-                        top: 200px;
-                        right: 30px;
+                        top: 130px;
+                        right: 10px;
+                        left: 5px;
+
+                        margin-right: 20px;
                     }
 
                     #about1 img {
-                        width: 900px;
-                        height: 500px;
+                        width: 300px;
+                        height: 400px;
                         object-fit: cover;
-                        top: 550px;
-                        left: 100px;
+                        top: 640px;
+                        left: 20px;
                     }
 
                     #about1 p {
-                        font-size: 30px;
-                        width: 40ch;
+                        font-size: 22px;
+                        width: 24ch;
                         text-align: left;
                         color: #efe8cc;
 
-                        margin-left: 100px;
+                        margin-left: 10px;
+
+                        margin-top: 150px;
 
                         z-index: 1;
                     }
@@ -1598,34 +1605,34 @@ STYLE:
 
                         border-radius: 50%;
 
-                        left: 960px;
-                        top: 520px;
+                        left: 170px;
+                        top: 920px;
                         transform: rotate(10deg);                    
                     }
                     
                 /* about2 */
 
                     #about2 p {
-                        font-size: 30px;
-                        width: 55ch;
-                        text-align: left;
+                        font-size: 22px;
+                        width: 24ch;
+                        text-align: right;
                         color: #efe8cc;
 
                         align-self: center;
                         justify-self: center;
-                        margin-top: 600px;
+                        margin-top: 400px;
                         margin-bottom: 600px;
 
                         z-index: 1;
                     }
 
                     #aboutimg1 {
-                        width: 440px;
-                        height: 440px;
+                        width: 340px;
+                        height: 340px;
                         object-fit: cover;
 
                         top: 1300px;
-                        left: 1000px;
+                        left: 10px;
                     }
 
                     #aboutimg2 {
