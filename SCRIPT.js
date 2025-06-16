@@ -52,3 +52,19 @@ function toggleNav() {
   icon.classList.toggle("active"); // add this line
 }
 
+
+
+// HOME PAGE FOOD PREVIEW BG
+
+window.addEventListener("scroll", () => {
+  const foodSection = document.querySelector("#foodpreview-section");
+  const rect = foodSection.getBoundingClientRect();
+
+  // Check if it's visible in the viewport
+  if (rect.top <= window.innerHeight * 0.5 && rect.bottom >= window.innerHeight * 0.5) {
+    document.body.classList.add("food-preview-active");
+  } else {
+    document.body.classList.remove("food-preview-active");
+  }
+});
+
