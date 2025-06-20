@@ -53,9 +53,33 @@ STYLE:
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'rincon';
+    src: url(FONTS/Rincon-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'notevela';
+    src: url(FONTS/Notevela.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 
+
+
+
+body.fade-in {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+body.fade-in.loaded {
+  opacity: 1;
+}
 
 
 
@@ -104,7 +128,7 @@ STYLE:
 
         .main_nav a {
             text-decoration: none;
-            font-family: 'roboto-mono', monospace;
+            font-family: 'notevela', monospace;
             font-size: 35px;
             text-decoration: none;
             transition: all 0.3s ease;
@@ -266,6 +290,9 @@ STYLE:
 
 
         transition: background-color 1.5s ease;
+
+        overflow-x: hidden;
+
     }
 
 
@@ -307,6 +334,7 @@ STYLE:
         grid-template-columns: 1fr; /* one column layout */
         gap: 4rem;
         width: 100%;
+
         }
 
         #welcome,
@@ -314,14 +342,14 @@ STYLE:
         #homeorder {
         position: relative;
         padding: 4rem 2rem;
-        transition: all 3s ease;
+        transition: color 3s ease, background-color 3s ease;
 
         }
 
         #welcome h1,
         #welcomescroll h1, 
         #homeorder h1 {
-            font-family: 'bernoru';
+            font-family: 'postercut';
         }
 
             /* welcome section */
@@ -355,8 +383,155 @@ STYLE:
 
                 #welcome {
                     margin-top: 160px;
-                    margin-bottom: 200px;
+                    margin-bottom: 100px;
                 }
+
+
+                /* stamps */
+                    #stamps  {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    #stamps img {
+                        position: absolute;
+                        width: 200px;
+                        height: auto; 
+
+                        z-index: 0;
+                        opacity: 80%;
+                    }
+
+                        #tacostamp1 img {
+                            filter: brightness(0) saturate(100%) invert(19%) sepia(100%) saturate(7434%) hue-rotate(352deg) brightness(94%) contrast(89%);
+
+                            top: 550px;
+                            left: 1460px;
+                            position: absolute;
+
+                        }
+
+                        #burritostamp img {
+                            filter: brightness(0) saturate(100%) invert(10%) sepia(96%) saturate(1500%) hue-rotate(132deg) brightness(85%) contrast(88%);
+
+                            top: 200px;
+                            left: 1460px;
+                            rotate: 10deg;
+
+                            width: 150px;
+
+                            position: absolute;
+                        }
+
+                        #lambstamp img {
+                            filter: brightness(0) saturate(100%) invert(57%) sepia(96%) saturate(529%) hue-rotate(86deg) brightness(59%) contrast(90%);
+                            
+                            left: 300px;
+                            top: 530px;
+                            rotate: -10deg;
+
+                            position: absolute;
+                        }
+
+                        #nachostamp img {
+                            filter: brightness(0) saturate(100%) invert(19%) sepia(100%) saturate(7434%) hue-rotate(352deg) brightness(94%) contrast(89%);
+
+
+                            top: 760px;
+                            left: 20px;
+
+                            rotate: 10deg;
+
+                            position: absolute;
+                        }
+
+                        #vegstamp img {
+                            filter: brightness(0) saturate(100%) invert(57%) sepia(96%) saturate(529%) hue-rotate(86deg) brightness(59%) contrast(90%);
+                            
+
+                            top: 4100px;
+                            left: 20px;
+
+                            rotate: -10deg;
+
+
+                            position: absolute;
+                            
+                        }
+
+                        #tacostamp2 img {
+                            filter: brightness(0) saturate(100%) invert(15%) sepia(92%) saturate(1300%) hue-rotate(222deg) brightness(94%) contrast(95%);
+                            
+                            top: 100px;
+                            left: 220px;
+
+                            rotate: 10deg;
+
+                            position: absolute;
+
+                        }
+
+                        #chickenstamp img {
+                           filter: brightness(0) saturate(100%) invert(19%) sepia(100%) saturate(7434%) hue-rotate(352deg) brightness(94%) contrast(89%);
+
+                           top: 4000px;
+                           left: 500px;
+
+                           position: absolute;
+                        }
+
+                        #firestamp img {
+                            top: 1500px;
+                            left: 1200px;
+
+                            width: 400px;
+                            rotate: -10deg;
+
+                            position: absolute;
+                        }
+
+                        #forkstamp img {
+                            filter: brightness(0) saturate(100%) invert(15%) sepia(92%) saturate(1300%) hue-rotate(222deg) brightness(94%) contrast(95%);
+
+                            top: 1300px;
+                            left: 870px;
+                            width: 250px;
+
+                            rotate: 10deg;
+
+                            position: absolute;
+                        }
+
+                        #goosestamp img {
+                            filter: brightness(0) saturate(100%) invert(10%) sepia(96%) saturate(1500%) hue-rotate(132deg) brightness(85%) contrast(88%);
+
+                            top: 1540px;
+                            left: 20px;
+                            rotate: -10deg;
+
+                            position: absolute;
+                        }
+
+                        #mealstamp img {
+                            filter: brightness(0) saturate(100%) invert(64%) sepia(32%) saturate(825%) hue-rotate(325deg) brightness(74%) contrast(89%);
+
+                            top: 1350px;
+                            left: 250px;
+
+                            position: absolute;
+                        }
+
+                        #snackstamp img {
+                            filter: brightness(0) saturate(100%) invert(15%) sepia(92%) saturate(1300%) hue-rotate(222deg) brightness(94%) contrast(95%);
+
+                            top: 700px;
+                            left: 1300px;
+                            rotate: 10deg;
+
+                            position: absolute;
+                            
+                        }
 
             /* welcomescroll section */
                 #welcomescroll h1 {
@@ -505,7 +680,6 @@ STYLE:
 
                 .label {
                 position: absolute;
-                font-family: 'roboto-mono';
 
                 z-index: 5;
                 }
@@ -554,6 +728,8 @@ STYLE:
                     font-size: 50px;
                     color: #f1d160;
 
+                    font-family: roboto-mono;
+
                     transform: rotate(270deg);
 
                     top: 740px; left: -80px; 
@@ -564,6 +740,7 @@ STYLE:
                     font-weight: bold;
                     font-size: 50px;
                     color: #3538c0;
+                    font-family: 'roboto-mono';
 
                     top: 400px; left: 1330px; 
                 }
@@ -575,6 +752,8 @@ STYLE:
                     padding-left: 30px;
                     padding-right: 30px;
                     border-radius: 7%;
+
+                    font-family: 'bernoru';
 
                     background-color: #35c05f;
 
@@ -588,6 +767,8 @@ STYLE:
                     font-size: 50px;
                     color: #efe8cc;
 
+                    font-family: 'bernoru';
+
                     top: 970px; left: 770px; 
                 }
 
@@ -596,6 +777,8 @@ STYLE:
                     background-color: #0e3f3d;
                     color: #fff;
                     top: 1200px; left: 330px;
+
+                    font-family: 'roboto-mono';
                     
                     padding: 20px;
                     padding-left: 30px;
@@ -684,9 +867,9 @@ STYLE:
         }
 
         .menu-title {
-            font-family: 'bernoru';
+            font-family: 'postercut';
             color: #efe8cc;
-            font-size: 80px;
+            font-size: 150px;
 
             text-align: center;
 
@@ -696,11 +879,11 @@ STYLE:
         }
 
         .menu-subhead {
-            font-family: 'roboto-mono';
+            font-family: 'notevela';
             color: #be3a31;
             font-weight: normal;
 
-            font-size: 50px;
+            font-size: 80px;
             text-align: center;
 
             margin-top: 0;
@@ -758,11 +941,11 @@ STYLE:
 
                 /* about1 */
                     #about1 h1 {
-                        font-family: 'bernoru';
+                        font-family: 'postercut';
                         color: #0e3f3d;
-                        font-size: 80px;
+                        font-size: 150px;
                         text-align: right;
-                        top: 200px;
+                        top: 120px;
                         right: 30px;
                     }
 
@@ -770,7 +953,7 @@ STYLE:
                         width: 900px;
                         height: 500px;
                         object-fit: cover;
-                        top: 550px;
+                        top: 650px;
                         left: 100px;
                     }
 
@@ -795,6 +978,8 @@ STYLE:
                         background-color: #efe8cc;
                         color: #0e3f3d;
                         padding: 80px;
+
+                        font-family: 'bernoru';
 
                         border-radius: 50%;
 
@@ -825,7 +1010,7 @@ STYLE:
                         object-fit: cover;
 
                         top: 1300px;
-                        left: 1000px;
+                        left: 1200px;
                     }
 
                     #aboutimg2 {
@@ -833,7 +1018,7 @@ STYLE:
                         height: 500px;
                         object-fit: cover;
 
-                        top: 1480px;
+                        top: 1580px;
                         left: 100px;
                     }
 
@@ -845,7 +1030,9 @@ STYLE:
                         padding-left: 70px;
                         padding-right: 70px;
 
-                        left: 940px;
+                        font-family: 'roboto-mono';
+
+                        left: 1140px;
                         top: 1700px;
                         transform: rotate(10deg);                    
                     }
@@ -860,7 +1047,7 @@ STYLE:
                         border-radius: 6%;
 
                         left: 30px;
-                        top: 1460px;
+                        top: 1560px;
                         transform: rotate(-10deg);                    
                     }
 
@@ -1273,11 +1460,11 @@ STYLE:
 
                     #food7 img {
                         width: 300px;
-                        height: 500px;
+                        height: 450px;
                         object-fit: cover;
 
                         position: absolute;
-                        top: 1100px; left: 20px;
+                        top: 1100px; left: 0px;
                         rotate: -10deg;
                     }
 
@@ -1298,7 +1485,7 @@ STYLE:
                         object-fit: cover;
 
                         position: absolute;
-                        top: 1200px; left: 450px;
+                        top: 1200px; left: 360px;
 
                         border: #35c05f solid 10px;
                         border-radius: 10%;
@@ -1347,7 +1534,7 @@ STYLE:
                     border-radius: 50%;
                     text-align: center;
                     transform: rotate(-10deg);
-                    top: 1350px; left: 370px; 
+                    top: 1350px; left: 300px; 
                 }
 
                 /* yellow text - blue border*/
@@ -1390,7 +1577,7 @@ STYLE:
                     font-size: 50px;
                     color: #efe8cc;
 
-                    top: 1270px; left: 70px; 
+                    top: 1270px; left: 20px; 
                 }
 
                 /* dark green rectangle - taco2 */
@@ -1460,11 +1647,11 @@ STYLE:
                 }
 
                 #homeorder img {
-                    width: 300px;
-                    height: 160px;
+                    width: 400px;
+                    height: 460px;
                     object-fit: cover;
                     top: 200px;
-                    left: 500px;
+                    left: 400px;
                     opacity: 0.8;
                     z-index: -10;
                 }
@@ -1482,6 +1669,15 @@ STYLE:
         transition: color 0.5s ease;
 
         padding-top: 80px;
+        max-width: 900px;
+        }
+
+        #menuheader .icon i{
+            color: #be3a31;
+        }
+
+        #menuheader .icon i:hover {
+            color: #f1d160;
         }
 
         #maindishes,
@@ -1494,7 +1690,7 @@ STYLE:
         .menu-title {
             font-family: 'bernoru';
             color: #efe8cc;
-            font-size: 80px;
+            font-size: 60px;
 
             text-align: center;
 
@@ -1561,7 +1757,7 @@ STYLE:
                 grid-template-columns: 1fr; 
                 gap: 4rem;
                 width: 100%;
-                max-width: 500px;
+                max-width: 900px;
                 background-color: #be3a31;
                 overflow: hidden;
         }
@@ -1570,7 +1766,7 @@ STYLE:
                     #about1 h1 {
                         font-family: 'bernoru';
                         color: #0e3f3d;
-                        font-size: 50px;
+                        font-size: 80px;
                         text-align: right;
                         top: 130px;
                         right: 10px;
@@ -1580,20 +1776,20 @@ STYLE:
                     }
 
                     #about1 img {
-                        width: 300px;
+                        width: 600px;
                         height: 400px;
                         object-fit: cover;
-                        top: 640px;
+                        top: 540px;
                         left: 20px;
                     }
 
                     #about1 p {
-                        font-size: 22px;
-                        width: 24ch;
+                        font-size: 25px;
+                        width: 50ch;
                         text-align: left;
                         color: #efe8cc;
 
-                        margin-left: 10px;
+                        margin-left: 20px;
 
                         margin-top: 150px;
 
@@ -1613,16 +1809,16 @@ STYLE:
 
                         border-radius: 50%;
 
-                        left: 170px;
-                        top: 920px;
+                        left: 530px;
+                        top: 500px;
                         transform: rotate(10deg);                    
                     }
                     
                 /* about2 */
 
                     #about2 p {
-                        font-size: 22px;
-                        width: 24ch;
+                        font-size: 25px;
+                        width: 50ch;
                         text-align: right;
                         color: #efe8cc;
 
@@ -1635,21 +1831,21 @@ STYLE:
                     }
 
                     #aboutimg1 {
-                        width: 300px;
+                        width: 450px;
                         height: 300px;
                         object-fit: cover;
 
-                        top: 1550px;
+                        top: 1220px;
                         left: 10px;
                     }
 
                     #aboutimg2 {
-                        width: 200px;
-                        height: 250px;
+                        width: 300px;
+                        height: 350px;
                         object-fit: cover;
 
-                        top: 1870px;
-                        left: 150px;
+                        top: 1470px;
+                        left: 480px;
                     }
 
 
@@ -1660,7 +1856,7 @@ STYLE:
                         padding-left: 70px;
                         padding-right: 70px;
 
-                        left: 190px;
+                        left: 390px;
                         top: 1600px;
                         transform: rotate(10deg);                    
                     }
@@ -1674,15 +1870,15 @@ STYLE:
 
                         border-radius: 6%;
 
-                        left: 30px;
-                        top: 1890px;
+                        left: 430px;
+                        top: 1320px;
                         transform: rotate(-10deg);                    
                     }
 
                     #about2 .star {
                         position: absolute;
-                        top: 950px;
-                        left: 5px;
+                        top: 650px;
+                        left: 550px;
                         color: #f1d160;
                         font-size: 300px;
                         z-index: 0;
@@ -1763,14 +1959,10 @@ STYLE:
                 margin-bottom: 150px;
 
                 text-align: center;
-
             }
 
-
-
-
 }
-
+ 
 
 
 

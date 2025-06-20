@@ -59,3 +59,35 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
+
+
+
+  // PAGE TRANSITIONS 
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("fade-in");
+  requestAnimationFrame(() => {
+    document.body.classList.add("loaded");
+  });
+
+  const links = document.querySelectorAll("a:not([target]):not([href^='#'])");
+
+  links.forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const href = link.href;
+
+      // Fade out the body itself
+      document.body.classList.remove("loaded");
+
+      setTimeout(() => {
+        window.location.href = href;
+      }, 600); // match CSS transition duration
+    });
+  });
+});
+
+
+
+
