@@ -1482,13 +1482,14 @@ s
       .nav-wrapper {
         flex-direction: column;
         align-items: stretch;
+        overflow-x: hidden;
     }
 
         .nav-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 15px;
+            padding: 0px;
         }
 
         .main_nav {
@@ -1496,7 +1497,7 @@ s
             flex-direction: column;
             align-items: flex-start;
             width: 100%;
-            padding-left: 20px;
+            padding-left: 0;
         }
 
         .main_nav.responsive {
@@ -1669,9 +1670,10 @@ s
 }
 
 /* mobile */ 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
     body {
-        max-width: 320px;
+        max-width: 420px;
+        overflow-x: hidden;
     }
 
 
@@ -1679,24 +1681,25 @@ s
 
     /* index */
         #homegrid {
-            max-width: 5000px;
+            max-width: 420px;
         }
 
             /* welcome section */
                 #welcome h1 {
-                    font-size: 150px;
+                    font-size: 44px;
+                    line-break: normal;
                     letter-spacing: 0;
                     bottom: 200px;
                 }
                     .landing-img {
-                        max-width: 1900px;
+                        max-width: 800px;
                     }
 
                 #welcome img {
-                    width: 1000px;
-                    height: 700px;
-                    top: -150px;
-                    left: 650px;
+                    width: 320px;
+                    height: 300px;
+                    top: 70px;
+                    left: 10px;
                 }
 
                 #welcome {
@@ -1707,90 +1710,96 @@ s
 
                 /* stamps */
                     #stamps img {
-                        width: 200px;
+                        width: 100px;
+                        z-index: 500;
                     }
 
                         #tacostamp1 img {
-                            top: 500px;
-                            left: 370px;
-                            width: 250px;
+                            top: 480px;
+                            left: 10px;
+                            width: 150px;
                         }
 
                         #burritostamp img {
                             top: 730px;
-                            left: 1460px;
+                            left: 40px;
                             width: 150px;
                         }
 
                         #lambstamp img {
-                            left: 70px;
-                            top: 590px;
-                            width: 250px;
+                            left: 180px;
+                            top: 520px;
+                            width: 100px;
                         }
 
                         #nachostamp img {
                             top: 1170px;
-                            left: 750px;
+                            left: 75px;
                         }
 
                         #vegstamp img {
-                            top: 3060px;
-                            left: 20px;
+                            top: 2170px;
+                            left: 220px;
+                            rotate: 10deg;
                         }
 
                         #tacostamp2 img {
-                            top: -20px;
+                            top: 20px;
                             left: 220px;
                         }
 
                         #chickenstamp img {
-                           top: 3650px;
-                           left: 500px;
+                           top: 2350px;
+                           left: 10px;
+                           width: 100px;
+                           rotate: -10deg;
                         }
 
                         #firestamp img {
-                            top: 1500px;
-                            left: 1000px;
-                            width: 400px;
+                            top: 1600px;
+                            left: 100px;
+                            width: 80px;
                         }
 
 
             /* welcomescroll section */
                 #welcomescroll h1 {
-                    font-size: 150px;
+                    font-size: 50px;
                     letter-spacing: 0;
                     padding-right: 10px;
-                    top: -45px;
+                    top: -75px;
                 }
 
                 #welcomescroll img {
-                    width: 900px;
-                    height: 900px;
-                    bottom: 100px;
-                    right: 1000px;
+                    width: 400px;
+                    height: 400px;
+                    bottom: 60px;
+                    right: 150px;
                 }
 
                 #welcomescroll {
-                    height: 900px;
+                    height: 500px;
                 }
 
                 .labelbutton .button {
                     padding: 30px;
-                    font-size: 30px;
+                    font-size: 15px;
                     padding-top: 15px;
                     padding-bottom: 15px;
                 }
 
                     .labelbutton {
-                        left: 1400px;
-                        top: 750px;
+                        left: 160px;
+                        top: 220px;
                     }
 
                 .scrolllabel  {
-                    font-size: 30px;
+                    font-size: 10px;
                     padding: 20px;
-                    top: 100px;
-                    left: 400px;
+                    top: 500px;
+                    left: 80px;
+
+                    rotate: -10deg;
                 }
 
     /* label placements  */
@@ -1798,28 +1807,28 @@ s
 
             /* cream text  */
             .labe11 { 
-                font-size: 200px;
-                top: 2080px; left: 70px; 
+                font-size: 50px;
+                top: 1450px; left: 5px; 
             }
 
             .label2 {
-                top: 2220px; left: 100px;
-                font-size: 300px;
+                top: 1370px; left: 20px;
+                font-size: 100px;
           }
 
             .label3 {
-                top: 2600px; left: 1200px;
-                font-size: 300px;
+                top: 1800px; left: 250px;
+                font-size: 100px;
             }
 
             .label4 {
-                top: 3000px;
-                left: 770px;
+                top: 1830px;
+                left: 100px;
             }
 
             .label4 .button  {
                 padding: 30px;
-                font-size: 30px;
+                font-size: 20px;
                 padding-top: 15px;
                 padding-bottom: 15px;
             }
@@ -1836,7 +1845,7 @@ s
 
                 .slider {
                     width: 100vw;
-                    height: 1100px;
+                    height: 600px;
 
                     overflow: hidden;
                     position: relative;
@@ -1913,54 +1922,63 @@ s
                     }
    
 
-                        
-               
-
-
-
-
             /* homeorder section */
 
                 #homeorder {
                     margin-top: 60px;
-                    margin-bottom: 180px;
+                    margin-bottom: 300px;
                 }
                 
                 #homeorder h1 {
-                    font-size: 200px;
+                    font-size: 70px;
                     letter-spacing: 0;
                     z-index: 1;
                     padding-bottom: 0;
                     margin-bottom: 0;
-                    top: -80px;
+                    top: -120px;
                 }
 
                 #homeorder h2 {
-                    font-size: 40px;
+                    font-size: 25px;
+                    width: 20ch;
                     padding-top: 0;
-                    padding-left: 30px;
-                    top: 300px;
-
+                    padding-left: 5px;
+                    top: 130px;
                 }
 
                 #homeorder h3 {
-                    font-size: 25px;
-                    padding-left: 30px;
-                    width: 40ch;
-                    word-spacing: 35px;
-                    line-height: 45px;
-                    
+                    font-size: 15px;
+                    padding-left: 5px;
+                    width: 22ch;
+                    word-spacing: 0px;
+                    line-height: 30px;
+
+                    position: absolute;
+                    top: 230px;
                 }
 
                 #homeorder .button {
-                    margin-left: 30px;
+                    margin-left: 0;
+                    position: absolute;
+
+                    top: 400px;
+
+                    font-size: 15px;
                 }
 
+                    #orderbtn {
+                        left: 20px;
+                    }
+
+                    #contactbtn {
+                        left: 170px;
+                    }
+
                 #homeorder img {
-                   width: 1000px;
-                    height: 930px;
-                    top: -60px;
-                    left: 750px;
+                   width: 300px;
+                    height: 230px;
+                    top: 350px;
+                    left: 75px;
                 }
 
 
@@ -1969,84 +1987,93 @@ s
         #menugrid {
         gap: 4rem;
         padding-top: 80px;
+        max-width: 420px;
+        }
+
+        #menuheader i{
+            color: #be3a31;
         }
 
         #maindishes,
         #snacks,
         #drinks {
-        padding: 4rem 2rem;
+        padding: 5px;
         }
 
         .menu-title {
-            font-size: 150px;
+            font-size: 50px;
             margin-bottom: 10px;
             margin-top: 20px;
         }
 
         .menu-subhead {
-            font-size: 80px;
+            font-size: 40px;
             margin-top: 0;
         }
 
             /* main section */
                 #maindishes dl, #snacks dl, #drinks dl {
-                    font-size: 30px;
+                    font-size: 16px;
                     line-height: 60px;
+                    animation: none;
+
                 }
 
                 #maindishes dt, #snacks dt, #drinks dt {
                     margin-top: 60px;
+                    animation: none;
+
                 }
 
                 /* stamps */
                     #menustamps img {
-                        width: 200px;
+                        width: 100px;
                     }
                         #menutacostamp1 img {
-                            top: 350px;
-                            left: 1200px;
-                            width: 250px;
+                            top: 620px;
+                            left: 160px;
+                            width: 90px;
                         }
 
                         #menuburritostamp img {
-                            top: 2700px;
+                            top: 270px;
                             left: 1360px;
                             width: 150px;
                         }
 
                         #menulambstamp img {        
-                            left: 170px;
-                            top: 200px;
-                            width: 250px;
+                            left: 200px;
+                            top: 400px;
+                            width: 100px;
                         }
 
                         #menunachostamp img {
-                            top: 2550px;
-                            left: 250px;
-                            width: 250px;
+                            top: 2450px;
+                            left: 230px;
+                            width: 150px;
                         }
 
                         #menuvegstamp img {
                             top: 1860px;
-                            left: 1220px;
-                            width: 250px;
-                            
+                            left: 220px;
+                            width: 150px;
+                            rotate: 10deg;
                         }
 
                         #menutacostamp2 img { 
-                            top: 900px;
-                            left: 1120px;
+                            top: 880px;
+                            left: 220px;
                         }
 
                         #menuchickenstamp img {
                            top: 1250px;
-                           left: 1200px;
+                           left: 300px;
                         }
 
                         #menufirestamp img {
                             top: 1500px;
-                            left: 100px;
-                            width: 400px;
+                            left: 20px;
+                            width: 100px;
                             rotate: -10deg;
                         }
 
@@ -2058,53 +2085,55 @@ s
 
                 /* about1 */
                     #about1 h1 {
-                        font-size: 250px;
+                        font-size: 80px;
                         top: -20px;
-                        right: 100px;
+                        right: 10px;
+                        margin-bottom: -10px;
                     }
 
                     #about1 img {
-                        width: 700px;
-                        height: 900px;
-                        top: 650px;
-                        left: 900px;
+                        width: 300px;
+                        height: 200px;
+                        top: 600px;
+                        left: 100px;
                    }
 
                     #about1 p {
-                        font-size: 30px;
-                        width: 40ch;
-                        margin-left: 100px;
+                        font-size: 20px;
+                        width: 30ch;
+                        margin-left: 10px;
                     }
 
                     #about1 .label9 {
-                        padding: 80px;
-                        left: 850px;
-                        top: 590px;                 
+                        padding: 40px;
+                        left: 20px;
+                        top: 700px;                 
                     }
                     
                 /* about2 */
 
                     #about2 p {
-                        font-size: 30px;
+                        font-size: 20px;
                         width: 30ch;
-                        margin-top: 400px;
-                        margin-bottom: 100px;
-                        padding-top: 100px;
-                        padding-left: 200px;
+                        margin-top: 200px;
+                        margin-bottom: 500px;
+                        padding-top: 20px;
+                        padding-left: 0;
                     }
 
                     #aboutimg1 {
-                        width: 440px;
-                        height: 440px;
+                        width: 300px;
+                        height: 300px;
                         top: 1300px;
-                        left: 1200px;
+                        left: 90px;
+                        z-index: 3;
                     }
 
                     #aboutimg2 {
-                        width: 500px;
-                        height: 500px;
-                        top: 1580px;
-                        left: 100px;
+                        width: 200px;
+                        height: 400px;
+                        top: 1200px;
+                        left: 10px;
                     }
 
 
@@ -2113,52 +2142,56 @@ s
                         padding-left: 70px;
                         padding-right: 70px;
                         left: 30px;
-                        top: 1560px;                   
+                        top: 1500px;                   
                     }
 
                     #about2 .star {
-                        top: 860px;
-                        left: 100px;
-                        font-size: 600px;
+                        top: 1090px;
+                        left: 220px;
+                        font-size: 200px;
+                        rotate: 10deg;
                     }
                 
 
     /* contact */
                 .social-icons a {
-                    font-size: 200px;
+                    font-size: 180px;
                 }
 
                 #ig  {
-                    top: 400px;
-                    left: 150px;
+                    top: 330px;
+                    left: 20px;
                 }
 
                 #tt {
-                    top: 10px;
-                    left: 50px;
+                    top: 20px;
+                    left: 100px;
                 }
 
 
         #contactgrid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
             grid-template-areas: 
-                'social-icons contactinfo'
+                'social-icons' 'contactinfo'
             ;
             min-height: 770px;
         }
                 #contactinfo h1 {
-                    font-size: 110px;
+                    font-size: 90px;
+                    padding: 10px;
                 }
 
                 #contactinfo p {
-                    font-size: 40px
+                    font-size: 30px;
+                    padding: 10px;
+                    padding-top: 0px;
                 }
 
             #contactgrid #bluestar {
-                font-size: 400px;
-                left: 10px;
+                font-size: 300px;
+                left: -20px;
                 top: 10px;
             }
 
@@ -2169,30 +2202,30 @@ s
             }
 
             #contactgrid #contacttaco {
-                width: 250px;
+                width: 200px;
                 top: 300px;
-                left: 200px;
+                left: 70px;
             }
 
             #contactgrid #contactnacho {
-                width: 250px;
-                top: 500px;
-                left: 400px;
+                width: 200px;
+                top: 430px;
+                left: 170px;
             }
 
             #contactgrid #rect1 {
-                width: 300px;
-                height: 600px;
+                width: 200px;
+                height: 400px;
                 padding: 20px;
                 top: 150px;
-                left: 200px;
+                left: 80px;
             }
 
             #contactgrid #rect2 {
-                width: 200px;
-                height: 400px;
+                width: 150px;
+                height: 350px;
                 top: 300px;
-                left: 400px;
+                left: 200px;
                 rotate: 10deg;
             }
 
