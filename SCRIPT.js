@@ -48,7 +48,24 @@ textCircle.forEach((value, key) => {
 
 
 
+// CIRCLE SCROLL
+ document.addEventListener("DOMContentLoaded", () => {
+    const fajita = document.querySelector(".fajita-animate");
 
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          fajita.classList.add("animate");
+          observer.unobserve(fajita);
+        }
+      },
+      {
+        threshold: 0.2
+      }
+    );
+
+    observer.observe(fajita);
+  });
 
 
 
