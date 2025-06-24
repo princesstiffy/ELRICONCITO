@@ -1662,17 +1662,1705 @@ s
     }
 }
 
-/* large mobile */
-@media screen and (max-width: 500px) {
+
+
+
+@media screen and (max-width: 600px)  {
     body {
-        max-width: 500px;
+        max-width: 600px;
+        overflow-x: hidden;
     }
+
+
+
+
+
+           #homegrid {
+            max-width: 600px;
+        }
+
+            /* welcome section */
+                #welcome h1 {
+                    font-size: 60px;
+                    line-break: normal;
+                    letter-spacing: 0;
+                    bottom: 200px;
+                }
+                    .landing-img {
+                        max-width: 800px;
+                    }
+
+                #welcome img {
+                    width: 420px;
+                    height: 400px;
+                    top: 70px;
+                    left: 60px;
+                }
+
+
+
+                /* stamps */
+                    #stamps img {
+                        width: 100px;
+                        z-index: 500;
+                    }
+
+                        #tacostamp1 img {
+                            top: 480px;
+                            left: 10px;
+                            width: 150px;
+                        }
+
+                        #burritostamp img {
+                            top: 800px;
+                            left: 40px;
+                            width: 150px;
+                        }
+
+                        #lambstamp img {
+                            left: 250px;
+                            top: 510px;
+                            width: 150px;
+                        }
+
+                        #nachostamp img {
+                            top: 1170px;
+                            left: 75px;
+                        }
+
+                        #vegstamp img {
+                            top: 2020px;
+                            left: 270px;
+                            rotate: 10deg;
+                            width: 150px;
+                        }
+
+                        #tacostamp2 img {
+                            top: 20px;
+                            left: 220px;
+                            width: 150px;
+                        }
+
+                        #chickenstamp img {
+                           top: 2420px;
+                           left: 20px;
+                           width: 150px;
+                           rotate: -10deg;
+                        }
+
+                        #firestamp img {
+                            top: 1600px;
+                            left: 100px;
+                            width: 80px;
+                        }
+
+
+            /* welcomescroll section */
+                #welcomescroll h1 {
+                    font-size: 50px;
+                    letter-spacing: 0;
+                    padding-right: 10px;
+                    top: -65px;
+                }
+
+                #welcomescroll img {
+                    width: 500px;
+                    height: 500px;
+                    bottom: 60px;
+                    right: 220px;
+                }
+
+                #welcomescroll {
+                    height: 500px;
+                }
+
+                .labelbutton .button {
+                    padding: 30px;
+                    font-size: 15px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+
+                    .labelbutton {
+                        left: 320px;
+                        top: 230px;
+                    }
+
+                .scrolllabel  {
+                    font-size: 20px;
+                    padding: 20px;
+                    top: 410px;
+                    left: 80px;
+
+                    rotate: -10deg;
+                }
+
+    /* label placements  */
+
+
+            /* cream text  */
+            .labe11 { 
+                font-size: 70px;
+                top: 1410px; left: 5px; 
+            }
+
+            .label2 {
+                top: 1370px; left: 10px;
+                font-size: 100px;
+          }
+
+            .label3 {
+                top: 1800px; left: 350px;
+                font-size: 100px;
+            }
+
+            .label4 {
+                top: 1870px;
+                left: 185px;
+            }
+
+            .label4 .button  {
+                padding: 30px;
+                font-size: 20px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+
+
+            /* slider */
+
+    
+                :root{
+                    --width-circle: 150vw;
+                    --radius: calc(100vw / 6);
+                }
+
+                .slider {
+                    width: 100vw;
+                    height: 600px;
+
+                    overflow: hidden;
+                    position: relative;
+
+                    background-color: #be3a31;
+                    background-image: url(IMAGES/pattern.png);
+                    background-repeat: repeat-y;
+                    background-size: contain;
+
+                    margin-top: -50px;
+                }
+
+                    .slider .list {
+                        position: absolute;
+                        width: max-content;
+                        height: 100%;
+
+                        display: flex;
+
+                        justify-content: start;
+                        align-items: center;
+
+                        transition: transform 0.8s;
+                    }
+
+                    .slider .list .item {
+                        width: calc(var(--radius) * 2);
+
+                        text-align: center;
+
+                        transform: rotate(45deg);
+                        transition: transform 1s;
+                    }
+
+                    .slider .list .item.active {
+                        transform: rotate(0deg);
+                    }
+
+                    .slider .list .item img {
+                        width: 90%;
+
+                        filter: drop-shadow(0 0 20px #000);
+                    }
+
+                    .slider .content div:nth-child(2){
+                        font-size: 5rem;
+                        text-transform: uppercase;
+                        letter-spacing: 10px;
+                        font-weight: bold;
+
+                        position: relative;
+                    }
+                    .slider .content div:nth-child(2)::before{
+                        position: absolute;
+                        left: 60%;
+                        bottom: 50%;
+                        width: 80px;
+                        height: 80px;
+                        content: '';
+                    }
+                    .slider .content div:nth-child(1){
+                        text-align: left;
+                        text-transform: uppercase;
+                        transform: translateY(20px);
+                    }
+                    .slider .content button{
+                        border: 1px solid #eee5;
+                        background: transparent;
+                        color: #eee;
+                        font-family: 'notevela';
+                        letter-spacing: 5px;
+                        border-radius: 20px;
+                        padding: 10px 20px;
+                    }
+   
+
+            /* homeorder section */
+
+                #homeorder {
+                    margin-top: 60px;
+                    margin-bottom: 300px;
+                }
+                
+                #homeorder h1 {
+                    font-size: 90px;
+                    letter-spacing: 0;
+                    z-index: 1;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                    top: -120px;
+                }
+
+                #homeorder h2 {
+                    font-size: 30px;
+                    width: 40ch;
+                    padding-top: 0;
+                    padding-left: 5px;
+                    top: 200px;
+                }
+
+                #homeorder h3 {
+                    font-size: 20px;
+                    padding-left: 5px;
+                    width: 25ch;
+                    word-spacing: 0px;
+                    line-height: 40px;
+
+                    position: absolute;
+                    top: 290px;
+                }
+
+                #homeorder .button {
+                    margin-left: 0;
+                    position: absolute;
+
+                    top: 450px;
+
+                    font-size: 15px;
+                }
+
+                    #orderbtn {
+                        left: 20px;
+                    }
+
+                    #contactbtn {
+                        left: 170px;
+                    }
+
+                #homeorder img {
+                   width: 250px;
+                    height: 320px;
+                    top: 360px;
+                    left: 205px;
+                }
+
+
+    /* menu */
+               
+        #menugrid {
+        gap: 4rem;
+        padding-top: 80px;
+        max-width: 600px;
+        }
+
+        #menuheader i{
+            color: #be3a31;
+        }
+
+        #maindishes,
+        #snacks,
+        #drinks {
+        padding: 5px;
+        }
+
+        .menu-title {
+            font-size: 50px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .menu-subhead {
+            font-size: 40px;
+            margin-top: 0;
+        }
+
+            /* main section */
+                #maindishes dl, #snacks dl, #drinks dl {
+                    font-size: 16px;
+                    line-height: 60px;
+                    animation: none;
+
+                }
+
+                #maindishes dt, #snacks dt, #drinks dt {
+                    margin-top: 60px;
+                    animation: none;
+
+                }
+
+                /* stamps */
+                    #menustamps img {
+                        width: 100px;
+                    }
+                        #menutacostamp1 img {
+                            top: 620px;
+                            left: 160px;
+                            width: 90px;
+                        }
+
+                        #menuburritostamp img {
+                            top: 270px;
+                            left: 1360px;
+                            width: 150px;
+                        }
+
+                        #menulambstamp img {        
+                            left: 200px;
+                            top: 400px;
+                            width: 100px;
+                        }
+
+                        #menunachostamp img {
+                            top: 2450px;
+                            left: 230px;
+                            width: 150px;
+                        }
+
+                        #menuvegstamp img {
+                            top: 1860px;
+                            left: 220px;
+                            width: 150px;
+                            rotate: 10deg;
+                        }
+
+                        #menutacostamp2 img { 
+                            top: 880px;
+                            left: 220px;
+                        }
+
+                        #menuchickenstamp img {
+                           top: 1250px;
+                           left: 300px;
+                        }
+
+                        #menufirestamp img {
+                            top: 1500px;
+                            left: 20px;
+                            width: 100px;
+                            rotate: -10deg;
+                        }
+
+
+    /* about */
+        #aboutgrid {
+                gap: 4rem;
+        }
+
+                /* about1 */
+                    #about1 h1 {
+                        font-size: 86px;
+                        top: -20px;
+                        right: 40px;
+                        margin-bottom: -10px;
+                    }
+
+                    #about1 img {
+                        width: 300px;
+                        height: 200px;
+                        top: 600px;
+                        left: 100px;
+                   }
+
+                    #about1 p {
+                        font-size: 20px;
+                        width: 30ch;
+                        margin-left: 10px;
+                    }
+
+                    #about1 .label9 {
+                        padding: 40px;
+                        left: 20px;
+                        top: 700px;                 
+                    }
+                    
+                /* about2 */
+
+                    #about2 p {
+                        font-size: 20px;
+                        width: 30ch;
+                        margin-top: 200px;
+                        margin-bottom: 500px;
+                        padding-top: 20px;
+                        padding-left: 0;
+                    }
+
+                    #aboutimg1 {
+                        width: 300px;
+                        height: 300px;
+                        top: 1300px;
+                        left: 150px;
+                        z-index: 3;
+                    }
+
+                    #aboutimg2 {
+                        width: 200px;
+                        height: 400px;
+                        top: 1200px;
+                        left: 60px;
+                    }
+
+
+                    #about2 .label11 {
+                        padding: 30px;
+                        padding-left: 70px;
+                        padding-right: 70px;
+                        left: 90px;
+                        top: 1550px;                   
+                    }
+
+                    #about2 .star {
+                        top: 1120px;
+                        left: 240px;
+                        font-size: 200px;
+                        rotate: 10deg;
+                        z-index: 10;
+                    }
+                
+
+    /* contact */
+                .social-icons a {
+                    font-size: 180px;
+                }
+
+                #ig  {
+                    top: 330px;
+                    left: 60px;
+                }
+
+                #tt {
+                    top: 20px;
+                    left: 250px;
+                    position: absolute;
+                }
+
+
+        #contactgrid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+                'social-icons' 'contactinfo'
+            ;
+            min-height: 770px;
+        }
+                #contactinfo h1 {
+                    font-size: 100px;
+                    padding: 10px;
+                    text-align: center;
+                }
+
+                #contactinfo p {
+                    font-size: 30px;
+                    padding: 10px;
+                    padding-top: 0px;
+                }
+
+            #contactgrid #bluestar {
+                font-size: 300px;
+                left: -20px;
+                top: 10px;
+            }
+
+            #contactgrid #yellowstar {
+                font-size: 300px;
+                left: 220px;
+                top: 400px;
+            }
+
+            #contactgrid #contacttaco {
+                width: 200px;
+                top: 300px;
+                left: 70px;
+            }
+
+            #contactgrid #contactnacho {
+                width: 200px;
+                top: 430px;
+                left: 170px;
+            }
+
+            #contactgrid #rect1 {
+                width: 200px;
+                height: 400px;
+                padding: 20px;
+                top: 150px;
+                left: 120px;
+            }
+
+            #contactgrid #rect2 {
+                width: 150px;
+                height: 350px;
+                top: 300px;
+                left: 260px;
+                rotate: 10deg;
+            }
 }
 
-/* mobile */ 
-@media screen and (max-width: 420px) {
+
+
+
+
+
+
+@media screen and (max-width: 500px)  {
     body {
-        max-width: 420px;
+        max-width: 500px;
+        overflow-x: hidden;
+    }
+
+
+
+
+
+           #homegrid {
+            max-width: 500px;
+        }
+
+            /* welcome section */
+                #welcome h1 {
+                    font-size: 60px;
+                    line-break: normal;
+                    letter-spacing: 0;
+                    bottom: 200px;
+                }
+                    .landing-img {
+                        max-width: 800px;
+                    }
+
+                #welcome img {
+                    width: 420px;
+                    height: 400px;
+                    top: 70px;
+                    left: 60px;
+                }
+
+
+
+                /* stamps */
+                    #stamps img {
+                        width: 100px;
+                        z-index: 500;
+                    }
+
+                        #tacostamp1 img {
+                            top: 480px;
+                            left: 10px;
+                            width: 150px;
+                        }
+
+                        #burritostamp img {
+                            top: 800px;
+                            left: 40px;
+                            width: 150px;
+                        }
+
+                        #lambstamp img {
+                            left: 190px;
+                            top: 570px;
+                            width: 150px;
+                        }
+
+                        #nachostamp img {
+                            top: 1170px;
+                            left: 75px;
+                        }
+
+                        #vegstamp img {
+                            top: 2070px;
+                            left: 250px;
+                            rotate: 10deg;
+                            width: 150px;
+                        }
+
+                        #tacostamp2 img {
+                            top: 20px;
+                            left: 220px;
+                            width: 150px;
+                        }
+
+                        #chickenstamp img {
+                           top: 2450px;
+                           left: 10px;
+                           width: 100px;
+                           rotate: -10deg;
+                        }
+
+                        #firestamp img {
+                            top: 1600px;
+                            left: 100px;
+                            width: 80px;
+                        }
+
+
+            /* welcomescroll section */
+                #welcomescroll h1 {
+                    font-size: 50px;
+                    letter-spacing: 0;
+                    padding-right: 10px;
+                    top: -75px;
+                }
+
+                #welcomescroll img {
+                    width: 400px;
+                    height: 400px;
+                    bottom: 60px;
+                    right: 150px;
+                }
+
+                #welcomescroll {
+                    height: 500px;
+                }
+
+                .labelbutton .button {
+                    padding: 30px;
+                    font-size: 15px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+
+                    .labelbutton {
+                        left: 270px;
+                        top: 220px;
+                    }
+
+                .scrolllabel  {
+                    font-size: 10px;
+                    padding: 20px;
+                    top: 500px;
+                    left: 80px;
+
+                    rotate: -10deg;
+                }
+
+    /* label placements  */
+
+
+            /* cream text  */
+            .labe11 { 
+                font-size: 60px;
+                top: 1490px; left: 5px; 
+            }
+
+            .label2 {
+                top: 1430px; left: 30px;
+                font-size: 100px;
+          }
+
+            .label3 {
+                top: 1800px; left: 320px;
+                font-size: 100px;
+            }
+
+            .label4 {
+                top: 1900px;
+                left: 152px;
+            }
+
+            .label4 .button  {
+                padding: 30px;
+                font-size: 20px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+
+
+            /* slider */
+
+    
+                :root{
+                    --width-circle: 150vw;
+                    --radius: calc(100vw / 6);
+                }
+
+                .slider {
+                    width: 100vw;
+                    height: 600px;
+
+                    overflow: hidden;
+                    position: relative;
+
+                    background-color: #be3a31;
+                    background-image: url(IMAGES/pattern.png);
+                    background-repeat: repeat-y;
+                    background-size: contain;
+
+                    margin-top: -50px;
+                }
+
+                    .slider .list {
+                        position: absolute;
+                        width: max-content;
+                        height: 100%;
+
+                        display: flex;
+
+                        justify-content: start;
+                        align-items: center;
+
+                        transition: transform 0.8s;
+                    }
+
+                    .slider .list .item {
+                        width: calc(var(--radius) * 2);
+
+                        text-align: center;
+
+                        transform: rotate(45deg);
+                        transition: transform 1s;
+                    }
+
+                    .slider .list .item.active {
+                        transform: rotate(0deg);
+                    }
+
+                    .slider .list .item img {
+                        width: 90%;
+
+                        filter: drop-shadow(0 0 20px #000);
+                    }
+
+                    .slider .content div:nth-child(2){
+                        font-size: 5rem;
+                        text-transform: uppercase;
+                        letter-spacing: 10px;
+                        font-weight: bold;
+
+                        position: relative;
+                    }
+                    .slider .content div:nth-child(2)::before{
+                        position: absolute;
+                        left: 60%;
+                        bottom: 50%;
+                        width: 80px;
+                        height: 80px;
+                        content: '';
+                    }
+                    .slider .content div:nth-child(1){
+                        text-align: left;
+                        text-transform: uppercase;
+                        transform: translateY(20px);
+                    }
+                    .slider .content button{
+                        border: 1px solid #eee5;
+                        background: transparent;
+                        color: #eee;
+                        font-family: 'notevela';
+                        letter-spacing: 5px;
+                        border-radius: 20px;
+                        padding: 10px 20px;
+                    }
+   
+
+            /* homeorder section */
+
+                #homeorder {
+                    margin-top: 60px;
+                    margin-bottom: 300px;
+                }
+                
+                #homeorder h1 {
+                    font-size: 80px;
+                    letter-spacing: 0;
+                    z-index: 1;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                    top: -120px;
+                }
+
+                #homeorder h2 {
+                    font-size: 25px;
+                    width: 30ch;
+                    padding-top: 0;
+                    padding-left: 5px;
+                    top: 170px;
+                }
+
+                #homeorder h3 {
+                    font-size: 20px;
+                    padding-left: 5px;
+                    width: 25ch;
+                    word-spacing: 0px;
+                    line-height: 40px;
+
+                    position: absolute;
+                    top: 240px;
+                }
+
+                #homeorder .button {
+                    margin-left: 0;
+                    position: absolute;
+
+                    top: 400px;
+
+                    font-size: 15px;
+                }
+
+                    #orderbtn {
+                        left: 20px;
+                    }
+
+                    #contactbtn {
+                        left: 170px;
+                    }
+
+                #homeorder img {
+                   width: 300px;
+                    height: 230px;
+                    top: 380px;
+                    left: 115px;
+                }
+
+
+    /* menu */
+               
+        #menugrid {
+        gap: 4rem;
+        padding-top: 80px;
+        max-width: 500px;
+        }
+
+        #menuheader i{
+            color: #be3a31;
+        }
+
+        #maindishes,
+        #snacks,
+        #drinks {
+        padding: 5px;
+        }
+
+        .menu-title {
+            font-size: 50px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .menu-subhead {
+            font-size: 40px;
+            margin-top: 0;
+        }
+
+            /* main section */
+                #maindishes dl, #snacks dl, #drinks dl {
+                    font-size: 16px;
+                    line-height: 60px;
+                    animation: none;
+
+                }
+
+                #maindishes dt, #snacks dt, #drinks dt {
+                    margin-top: 60px;
+                    animation: none;
+
+                }
+
+                /* stamps */
+                    #menustamps img {
+                        width: 100px;
+                    }
+                        #menutacostamp1 img {
+                            top: 620px;
+                            left: 160px;
+                            width: 90px;
+                        }
+
+                        #menuburritostamp img {
+                            top: 270px;
+                            left: 1360px;
+                            width: 150px;
+                        }
+
+                        #menulambstamp img {        
+                            left: 200px;
+                            top: 400px;
+                            width: 100px;
+                        }
+
+                        #menunachostamp img {
+                            top: 2450px;
+                            left: 230px;
+                            width: 150px;
+                        }
+
+                        #menuvegstamp img {
+                            top: 1860px;
+                            left: 220px;
+                            width: 150px;
+                            rotate: 10deg;
+                        }
+
+                        #menutacostamp2 img { 
+                            top: 880px;
+                            left: 220px;
+                        }
+
+                        #menuchickenstamp img {
+                           top: 1250px;
+                           left: 300px;
+                        }
+
+                        #menufirestamp img {
+                            top: 1500px;
+                            left: 20px;
+                            width: 100px;
+                            rotate: -10deg;
+                        }
+
+
+    /* about */
+        #aboutgrid {
+                gap: 4rem;
+        }
+
+                /* about1 */
+                    #about1 h1 {
+                        font-size: 76px;
+                        top: -20px;
+                        right: 10px;
+                        margin-bottom: -10px;
+                    }
+
+                    #about1 img {
+                        width: 300px;
+                        height: 200px;
+                        top: 600px;
+                        left: 100px;
+                   }
+
+                    #about1 p {
+                        font-size: 20px;
+                        width: 30ch;
+                        margin-left: 10px;
+                    }
+
+                    #about1 .label9 {
+                        padding: 40px;
+                        left: 20px;
+                        top: 700px;                 
+                    }
+                    
+                /* about2 */
+
+                    #about2 p {
+                        font-size: 20px;
+                        width: 30ch;
+                        margin-top: 200px;
+                        margin-bottom: 500px;
+                        padding-top: 20px;
+                        padding-left: 0;
+                    }
+
+                    #aboutimg1 {
+                        width: 300px;
+                        height: 300px;
+                        top: 1300px;
+                        left: 90px;
+                        z-index: 3;
+                    }
+
+                    #aboutimg2 {
+                        width: 200px;
+                        height: 400px;
+                        top: 1200px;
+                        left: 10px;
+                    }
+
+
+                    #about2 .label11 {
+                        padding: 30px;
+                        padding-left: 70px;
+                        padding-right: 70px;
+                        left: 30px;
+                        top: 1500px;                   
+                    }
+
+                    #about2 .star {
+                        top: 1090px;
+                        left: 220px;
+                        font-size: 200px;
+                        rotate: 10deg;
+                    }
+                
+
+    /* contact */
+                .social-icons a {
+                    font-size: 180px;
+                }
+
+                #ig  {
+                    top: 330px;
+                    left: 60px;
+                }
+
+                #tt {
+                    top: 20px;
+                    left: 250px;
+                    position: absolute;
+                }
+
+
+        #contactgrid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+                'social-icons' 'contactinfo'
+            ;
+            min-height: 770px;
+        }
+                #contactinfo h1 {
+                    font-size: 100px;
+                    padding: 10px;
+                    text-align: center;
+                }
+
+                #contactinfo p {
+                    font-size: 30px;
+                    padding: 10px;
+                    padding-top: 0px;
+                }
+
+            #contactgrid #bluestar {
+                font-size: 300px;
+                left: -20px;
+                top: 10px;
+            }
+
+            #contactgrid #yellowstar {
+                font-size: 300px;
+                left: 220px;
+                top: 400px;
+            }
+
+            #contactgrid #contacttaco {
+                width: 200px;
+                top: 300px;
+                left: 70px;
+            }
+
+            #contactgrid #contactnacho {
+                width: 200px;
+                top: 430px;
+                left: 170px;
+            }
+
+            #contactgrid #rect1 {
+                width: 200px;
+                height: 400px;
+                padding: 20px;
+                top: 150px;
+                left: 120px;
+            }
+
+            #contactgrid #rect2 {
+                width: 150px;
+                height: 350px;
+                top: 300px;
+                left: 260px;
+                rotate: 10deg;
+            }
+}
+
+
+
+
+
+
+/* large mobile */
+@media screen and (max-width: 400px) {
+    body {
+        max-width: 400px;
+        overflow-x: hidden;
+    }
+
+
+
+
+
+           #homegrid {
+            max-width: 400px;
+        }
+
+            /* welcome section */
+                #welcome h1 {
+                    font-size: 55px;
+                    line-break: normal;
+                    letter-spacing: 0;
+                    bottom: 200px;
+                }
+                    .landing-img {
+                        max-width: 800px;
+                    }
+
+                #welcome img {
+                    width: 320px;
+                    height: 400px;
+                    top: 70px;
+                    left: 60px;
+                }
+
+
+
+                /* stamps */
+                    #stamps img {
+                        width: 100px;
+                        z-index: 500;
+                    }
+
+                        #tacostamp1 img {
+                            top: 480px;
+                            left: 10px;
+                            width: 150px;
+                        }
+
+                        #burritostamp img {
+                            top: 730px;
+                            left: 40px;
+                            width: 150px;
+                        }
+
+                        #lambstamp img {
+                            left: 180px;
+                            top: 600px;
+                            width: 100px;
+                        }
+
+                        #nachostamp img {
+                            top: 1170px;
+                            left: 75px;
+                        }
+
+                        #vegstamp img {
+                            top: 2170px;
+                            left: 250px;
+                            rotate: 10deg;
+                        }
+
+                        #tacostamp2 img {
+                            top: 20px;
+                            left: 220px;
+                            width: 150px;
+                        }
+
+                        #chickenstamp img {
+                           top: 2450px;
+                           left: 10px;
+                           width: 100px;
+                           rotate: -10deg;
+                        }
+
+                        #firestamp img {
+                            top: 1600px;
+                            left: 100px;
+                            width: 80px;
+                        }
+
+
+            /* welcomescroll section */
+                #welcomescroll h1 {
+                    font-size: 50px;
+                    letter-spacing: 0;
+                    padding-right: 10px;
+                    top: -75px;
+                }
+
+                #welcomescroll img {
+                    width: 400px;
+                    height: 400px;
+                    bottom: 60px;
+                    right: 150px;
+                }
+
+                #welcomescroll {
+                    height: 500px;
+                }
+
+                .labelbutton .button {
+                    padding: 30px;
+                    font-size: 15px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+
+                    .labelbutton {
+                        left: 220px;
+                        top: 220px;
+                    }
+
+                .scrolllabel  {
+                    font-size: 10px;
+                    padding: 20px;
+                    top: 500px;
+                    left: 80px;
+
+                    rotate: -10deg;
+                }
+
+    /* label placements  */
+
+
+            /* cream text  */
+            .labe11 { 
+                font-size: 50px;
+                top: 1490px; left: 5px; 
+            }
+
+            .label2 {
+                top: 1430px; left: 20px;
+                font-size: 100px;
+          }
+
+            .label3 {
+                top: 1800px; left: 290px;
+                font-size: 100px;
+            }
+
+            .label4 {
+                top: 1880px;
+                left: 130px;
+            }
+
+            .label4 .button  {
+                padding: 30px;
+                font-size: 20px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+
+
+            /* slider */
+
+    
+                :root{
+                    --width-circle: 150vw;
+                    --radius: calc(100vw / 6);
+                }
+
+                .slider {
+                    width: 100vw;
+                    height: 600px;
+
+                    overflow: hidden;
+                    position: relative;
+
+                    background-color: #be3a31;
+                    background-image: url(IMAGES/pattern.png);
+                    background-repeat: repeat-y;
+                    background-size: contain;
+
+                    margin-top: -50px;
+                }
+
+                    .slider .list {
+                        position: absolute;
+                        width: max-content;
+                        height: 100%;
+
+                        display: flex;
+
+                        justify-content: start;
+                        align-items: center;
+
+                        transition: transform 0.8s;
+                    }
+
+                    .slider .list .item {
+                        width: calc(var(--radius) * 2);
+
+                        text-align: center;
+
+                        transform: rotate(45deg);
+                        transition: transform 1s;
+                    }
+
+                    .slider .list .item.active {
+                        transform: rotate(0deg);
+                    }
+
+                    .slider .list .item img {
+                        width: 90%;
+
+                        filter: drop-shadow(0 0 20px #000);
+                    }
+
+                    .slider .content div:nth-child(2){
+                        font-size: 5rem;
+                        text-transform: uppercase;
+                        letter-spacing: 10px;
+                        font-weight: bold;
+
+                        position: relative;
+                    }
+                    .slider .content div:nth-child(2)::before{
+                        position: absolute;
+                        left: 60%;
+                        bottom: 50%;
+                        width: 80px;
+                        height: 80px;
+                        content: '';
+                    }
+                    .slider .content div:nth-child(1){
+                        text-align: left;
+                        text-transform: uppercase;
+                        transform: translateY(20px);
+                    }
+                    .slider .content button{
+                        border: 1px solid #eee5;
+                        background: transparent;
+                        color: #eee;
+                        font-family: 'notevela';
+                        letter-spacing: 5px;
+                        border-radius: 20px;
+                        padding: 10px 20px;
+                    }
+   
+
+            /* homeorder section */
+
+                #homeorder {
+                    margin-top: 60px;
+                    margin-bottom: 300px;
+                }
+                
+                #homeorder h1 {
+                    font-size: 70px;
+                    letter-spacing: 0;
+                    z-index: 1;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                    top: -120px;
+                }
+
+                #homeorder h2 {
+                    font-size: 25px;
+                    width: 20ch;
+                    padding-top: 0;
+                    padding-left: 5px;
+                    top: 130px;
+                }
+
+                #homeorder h3 {
+                    font-size: 15px;
+                    padding-left: 5px;
+                    width: 22ch;
+                    word-spacing: 0px;
+                    line-height: 30px;
+
+                    position: absolute;
+                    top: 230px;
+                }
+
+                #homeorder .button {
+                    margin-left: 0;
+                    position: absolute;
+
+                    top: 400px;
+
+                    font-size: 15px;
+                }
+
+                    #orderbtn {
+                        left: 20px;
+                    }
+
+                    #contactbtn {
+                        left: 170px;
+                    }
+
+                #homeorder img {
+                   width: 300px;
+                    height: 230px;
+                    top: 350px;
+                    left: 75px;
+                }
+
+
+    /* menu */
+               
+        #menugrid {
+        gap: 4rem;
+        padding-top: 80px;
+        max-width: 400px;
+        }
+
+        #menuheader i{
+            color: #be3a31;
+        }
+
+        #maindishes,
+        #snacks,
+        #drinks {
+        padding: 5px;
+        }
+
+        .menu-title {
+            font-size: 50px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .menu-subhead {
+            font-size: 40px;
+            margin-top: 0;
+        }
+
+            /* main section */
+                #maindishes dl, #snacks dl, #drinks dl {
+                    font-size: 16px;
+                    line-height: 60px;
+                    animation: none;
+
+                }
+
+                #maindishes dt, #snacks dt, #drinks dt {
+                    margin-top: 60px;
+                    animation: none;
+
+                }
+
+                /* stamps */
+                    #menustamps img {
+                        width: 100px;
+                    }
+                        #menutacostamp1 img {
+                            top: 620px;
+                            left: 160px;
+                            width: 90px;
+                        }
+
+                        #menuburritostamp img {
+                            top: 270px;
+                            left: 1360px;
+                            width: 150px;
+                        }
+
+                        #menulambstamp img {        
+                            left: 200px;
+                            top: 400px;
+                            width: 100px;
+                        }
+
+                        #menunachostamp img {
+                            top: 2450px;
+                            left: 230px;
+                            width: 150px;
+                        }
+
+                        #menuvegstamp img {
+                            top: 1860px;
+                            left: 220px;
+                            width: 150px;
+                            rotate: 10deg;
+                        }
+
+                        #menutacostamp2 img { 
+                            top: 880px;
+                            left: 220px;
+                        }
+
+                        #menuchickenstamp img {
+                           top: 1250px;
+                           left: 300px;
+                        }
+
+                        #menufirestamp img {
+                            top: 1500px;
+                            left: 20px;
+                            width: 100px;
+                            rotate: -10deg;
+                        }
+
+
+    /* about */
+        #aboutgrid {
+                gap: 4rem;
+        }
+
+                /* about1 */
+                    #about1 h1 {
+                        font-size: 76px;
+                        top: -20px;
+                        right: 10px;
+                        margin-bottom: -10px;
+                    }
+
+                    #about1 img {
+                        width: 300px;
+                        height: 200px;
+                        top: 600px;
+                        left: 100px;
+                   }
+
+                    #about1 p {
+                        font-size: 20px;
+                        width: 30ch;
+                        margin-left: 10px;
+                    }
+
+                    #about1 .label9 {
+                        padding: 40px;
+                        left: 20px;
+                        top: 700px;                 
+                    }
+                    
+                /* about2 */
+
+                    #about2 p {
+                        font-size: 20px;
+                        width: 30ch;
+                        margin-top: 200px;
+                        margin-bottom: 500px;
+                        padding-top: 20px;
+                        padding-left: 0;
+                    }
+
+                    #aboutimg1 {
+                        width: 300px;
+                        height: 300px;
+                        top: 1300px;
+                        left: 90px;
+                        z-index: 3;
+                    }
+
+                    #aboutimg2 {
+                        width: 200px;
+                        height: 400px;
+                        top: 1200px;
+                        left: 10px;
+                    }
+
+
+                    #about2 .label11 {
+                        padding: 30px;
+                        padding-left: 70px;
+                        padding-right: 70px;
+                        left: 30px;
+                        top: 1500px;                   
+                    }
+
+                    #about2 .star {
+                        top: 1090px;
+                        left: 220px;
+                        font-size: 200px;
+                        rotate: 10deg;
+                    }
+                
+
+    /* contact */
+                .social-icons a {
+                    font-size: 180px;
+                }
+
+                #ig  {
+                    top: 330px;
+                    left: 20px;
+                }
+
+                #tt {
+                    top: 20px;
+                    left: 100px;
+                }
+
+
+        #contactgrid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+                'social-icons' 'contactinfo'
+            ;
+            min-height: 770px;
+        }
+                #contactinfo h1 {
+                    font-size: 90px;
+                    padding: 10px;
+                }
+
+                #contactinfo p {
+                    font-size: 30px;
+                    padding: 10px;
+                    padding-top: 0px;
+                }
+
+            #contactgrid #bluestar {
+                font-size: 300px;
+                left: -20px;
+                top: 10px;
+            }
+
+            #contactgrid #yellowstar {
+                font-size: 300px;
+                left: 520px;
+                top: 500px;
+            }
+
+            #contactgrid #contacttaco {
+                width: 200px;
+                top: 300px;
+                left: 70px;
+            }
+
+            #contactgrid #contactnacho {
+                width: 200px;
+                top: 430px;
+                left: 170px;
+            }
+
+            #contactgrid #rect1 {
+                width: 200px;
+                height: 400px;
+                padding: 20px;
+                top: 150px;
+                left: 80px;
+            }
+
+            #contactgrid #rect2 {
+                width: 150px;
+                height: 350px;
+                top: 300px;
+                left: 200px;
+                rotate: 10deg;
+            }
+}
+
+
+
+/* mobile */ 
+@media screen and (max-width: 375px) {
+    body {
+        max-width: 375px;
         overflow-x: hidden;
     }
 
@@ -1681,7 +3369,7 @@ s
 
     /* index */
         #homegrid {
-            max-width: 420px;
+            max-width: 375px;
         }
 
             /* welcome section */
@@ -1975,7 +3663,7 @@ s
                     }
 
                 #homeorder img {
-                   width: 300px;
+                   width: 250px;
                     height: 230px;
                     top: 350px;
                     left: 75px;
@@ -1987,7 +3675,7 @@ s
         #menugrid {
         gap: 4rem;
         padding-top: 80px;
-        max-width: 420px;
+        max-width: 375px;
         }
 
         #menuheader i{
