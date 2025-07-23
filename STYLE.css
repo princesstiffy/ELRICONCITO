@@ -141,10 +141,9 @@ body.fade-in.loaded {
             padding: 0;
         }
 
-        .nav-header .logo img {
-            height: 70px;
-            width: 70px;
-            border-radius: 20%;
+        .logo img {
+            width: 100px;
+            height: 100px;
         }
 
         .nav-header .logo {
